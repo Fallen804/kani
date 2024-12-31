@@ -1,3 +1,7 @@
+<script lang="ts">
+	import Link from '$lib/components/atoms/Link.svelte';
+</script>
+
 <svelte:head>
 	<title>Imprint</title>
 </svelte:head>
@@ -16,12 +20,12 @@
 	<p class="mb-5 text-lg sm:text-xl">
 		<span class="font-medium">Contact</span><br />
 		Maximilian Hajek:
-		<a href="mailto:mhajek.mmtb-m2024@fh-salzburg.ac.at" class="text-indigo-500"
-			>mhajek.mmtb-m2024@fh-salzburg.ac.at</a
+		<Link href="mailto:mhajek.mmtb-m2024@fh-salzburg.ac.at"
+			>mhajek.mmtb-m2024@fh-salzburg.ac.at</Link
 		><br />
 		Pascal Gottschling:
-		<a href="mailto:pgottschling.mmtb-m2024@fh-salzburg.ac.at" class="text-indigo-500"
-			>pgottschling.mmtb-m2024@fh-salzburg.ac.at</a
+		<Link href="mailto:pgottschling.mmtb-m2024@fh-salzburg.ac.at"
+			>pgottschling.mmtb-m2024@fh-salzburg.ac.at</Link
 		>
 	</p>
 </main>
