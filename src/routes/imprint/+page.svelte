@@ -20,12 +20,8 @@
 	<p class="mb-5 text-lg sm:text-xl">
 		<span class="font-medium">Contact</span><br />
 		Maximilian Hajek:
-		<Link href="mailto:mhajek.mmtb-m2024@fh-salzburg.ac.at"
-			>mhajek.mmtb-m2024@fh-salzburg.ac.at</Link
-		><br />
+		<Link href="mailto:mhajek.mmtb-m2024@fh-salzburg.ac.at">mhajek.mmtb-m2024@fh-salzburg.ac.at</Link><br />
 		Pascal Gottschling:
-		<Link href="mailto:pgottschling.mmtb-m2024@fh-salzburg.ac.at"
-			>pgottschling.mmtb-m2024@fh-salzburg.ac.at</Link
-		>
+		<Link href="mailto:pgottschling.mmtb-m2024@fh-salzburg.ac.at">pgottschling.mmtb-m2024@fh-salzburg.ac.at</Link>
 	</p>
 </main>
