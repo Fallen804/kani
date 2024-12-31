@@ -1,9 +1,5 @@
 <script lang="ts">
-	import { enhance } from '$app/forms';
 	import mockup from '$lib/assets/mockup.avif';
-	import { Button } from '$lib/components/ui/button';
-	import { Input } from '$lib/components/ui/input';
-	import { toast } from 'svelte-sonner';
 </script>
 
 <svelte:head>
@@ -13,14 +9,12 @@
 <main class="flex flex-col items-center sm:px-8">
 	<div class="max-w-4xl text-center">
 		<div>
-			<h1 class="mx-4 mb-6 mt-8 text-balance text-4xl font-bold leading-tight sm:mt-16 sm:text-7xl sm:leading-tight">
-				Meet <span class="rounded-md bg-indigo-500 px-2 py-1 text-zinc-50">Kani</span>, the next-generation flashcard
-				app
+			<h1 class="mx-4 mb-5 mt-8 text-balance text-4xl font-bold leading-tight sm:mt-16 sm:text-7xl sm:leading-tight">
+				Meet <span class="rounded-2xl bg-indigo-500 px-2 py-1 text-zinc-50">Kani</span>: Flashcards for the digital age
 			</h1>
 		</div>
 		<h2 class="mx-4 mb-4 text-balance text-lg text-zinc-500 sm:text-2xl">
-			With its clean and modern design, Kani makes learning simple and enjoyable. Its intuitive interface and smart
-			features transform studying into an engaging experience
+			A beautiful, modern flashcard app designed for the rest of us
 		</h2>
 
 		<div class="mb-4 flex flex-col items-stretch justify-center gap-6 bg-gray-50 px-4 py-8 sm:flex-row sm:p-8">
