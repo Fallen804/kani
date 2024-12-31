@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Footer from '$lib/components/Footer/Footer.svelte';
-	import Header from '$lib/components/Header/Header.svelte';
+	import Footer from '$lib/components/organisms/Footer/Footer.svelte';
+	import Header from '$lib/components/organisms/Header/Header.svelte';
 	import { Toaster } from '$lib/components/ui/sonner';
 	import '../app.css';
 

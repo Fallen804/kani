@@ -9,7 +9,7 @@ export const actions = {
 			return { success: false, error: 'Email is required' };
 		}
 
-		const { error } = await supabase.from('ui').insert([{ email }]);
+		const { error } = await supabase.from('waitlist').insert([{ email }]);
 
 		// 23505 is a duplicate key error -> ignore this specific error and return success: true
 		if (error && error.code !== '23505') {
