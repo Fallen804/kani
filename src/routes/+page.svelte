@@ -18,39 +18,12 @@
 				app
 			</h1>
 		</div>
-		<h2 class="mx-4 mb-16 text-balance text-lg text-zinc-500 sm:text-2xl">
+		<h2 class="mx-4 mb-4 text-balance text-lg text-zinc-500 sm:text-2xl">
 			With its clean and modern design, Kani makes learning simple and enjoyable. Its intuitive interface and smart
 			features transform studying into an engaging experience
 		</h2>
 
-		<span class="mb-8 inline-flex rounded-full bg-zinc-200 px-4 py-2 text-sm sm:text-base">
-			Secure your spot on Kani's waitlist
-		</span>
-
-		<form
-			method="POST"
-			use:enhance={() => {
-				return async ({ result, formElement }) => {
-					if (result.type === 'success') {
-						if (result.data?.success) {
-							toast.success('Successfully added to the waitlist');
-							formElement.reset();
-						} else {
-							const errorMessage = (result.data?.error as string) ?? 'Oops, something went wrong...';
-							toast.error(errorMessage);
-						}
-					} else {
-						toast.error('Oops, something went wrong...');
-					}
-				};
-			}}
-			class="flex justify-center gap-2"
-		>
-			<Input name="email" type="email" placeholder="Email Address" required class="w-60 sm:w-80" />
-			<Button type="submit" class="bg-indigo-500 text-zinc-50">Join Waitlist</Button>
-		</form>
-
-		<div class="mt-12 flex flex-col items-stretch justify-center gap-6 bg-gray-50 px-4 py-8 sm:flex-row sm:p-8">
+		<div class="mb-4 flex flex-col items-stretch justify-center gap-6 bg-gray-50 px-4 py-8 sm:flex-row sm:p-8">
 			<div class="flex-1 rounded-lg border border-zinc-200 bg-white p-6 shadow-sm sm:rounded-l-3xl">
 				<p class="mb-2 text-sm font-bold text-indigo-500">Design</p>
 				<p class="mb-2 text-balance text-lg font-semibold">Intuitive and Beautiful Design</p>
@@ -79,5 +52,5 @@
 			</div>
 		</div>
 	</div>
-	<img src={mockup} alt="Kani on desktop and mobile" class="mt-8 w-full max-w-6xl px-2 sm:mt-20" />
+	<img src={mockup} alt="Kani on desktop and mobile" class="mx-2 w-full max-w-6xl" />
 </main>
