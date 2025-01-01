@@ -18,8 +18,8 @@
 		</h2>
 
 		<div class="mb-4 flex flex-col items-stretch justify-center gap-6 bg-gray-50 px-4 py-8 sm:flex-row sm:p-8">
-			{#snippet card(subheading: string, heading: string, text: string)}
-				<div class="flex-1 rounded-lg border border-zinc-200 bg-white p-6 shadow-sm sm:rounded-l-3xl">
+			{#snippet card(subheading: string, heading: string, text: string, rounded: string)}
+				<div class="flex-1 rounded-lg border border-zinc-200 bg-white p-6 shadow-sm {rounded}">
 					<p class="mb-2 text-sm font-bold text-indigo-500">{subheading}</p>
 					<p class="mb-2 text-balance text-lg font-semibold leading-snug">{heading}</p>
 					<p class="text-balance px-2 text-sm text-zinc-500">
@@ -31,17 +31,20 @@
 			{@render card(
 				'Design',
 				'Intuitive and Beautiful Design',
-				"Kani's modern interface makes studying effortless. Designed with users in mind, every click and swipe is optimized to help you focus on what matters most: learning"
+				"Kani's modern interface makes studying effortless. Designed with users in mind, every click and swipe is optimized to help you focus on what matters most: learning",
+				'sm:rounded-l-3xl'
 			)}
 			{@render card(
 				'Collaboration',
 				'Learn Together, Succeed Together',
-				'Share decks, collaborate with peers, and track team progress. Kani makes learning a social experience, helping you achieve your goals as a group'
+				'Share decks, collaborate with peers, and track team progress. Kani makes learning a social experience, helping you achieve your goals as a group',
+				''
 			)}
 			{@render card(
 				'Intelligent Learning',
 				'Smarter Studying with Science',
-				'Kani leverages science-backed methods like spaced repetition to optimize your learning. Retain information longer and focus on areas that matter most with personalized, effective study paths'
+				'Kani leverages science-backed methods like spaced repetition to optimize your learning. Retain information longer and focus on areas that matter most with personalized, effective study paths',
+				'sm:rounded-r-3xl'
 			)}
 		</div>
 	</div>
