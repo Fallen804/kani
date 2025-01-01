@@ -10,7 +10,7 @@
 	<h1 class="mb-5 text-4xl font-light sm:text-5xl">Privacy</h1>
 
 	<p class="mb-5 text-lg sm:text-xl">
-		Kani is our academic master’s project for the MultiMediaTechnology program at the Salzburg University of Applied
+		Kani is our academic master's project for the MultiMediaTechnology program at the Salzburg University of Applied
 		Sciences (FH Salzburg).
 	</p>
 
